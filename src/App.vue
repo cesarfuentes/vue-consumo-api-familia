@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <header>
-      <span>Vue.js PWA</span>
+      <span>Vue.js</span>
+      <router-link to="/login" exact id="rutas">Login</router-link>
+      <router-link to="/" exact id="rutas">home</router-link>
     </header>
     <main>
       <img src="./assets/logo.png" alt="Vue.js PWA">
@@ -39,16 +41,29 @@ header {
   padding: 0 16px 0 24px;
   background-color: #35495E;
   color: #ffffff;
+  justify-content: center;  
+  align-items: center;
+  align-content: center;
 }
 
 header span {
-  display: block;
   position: relative;
   font-size: 20px;
-  line-height: 1;
+  line-height: 2;
   letter-spacing: .02em;
   font-weight: 400;
   box-sizing: border-box;
   padding-top: 16px;
+}
+#rutas {
+  position: relative;
+  font-size: 20px;
+  line-height: 2;
+  letter-spacing: .02em;
+  font-weight: 400;
+  box-sizing: border-box;
+  
+  color: white;
+  
 }
 </style>

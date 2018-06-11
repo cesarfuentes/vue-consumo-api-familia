@@ -2,7 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
-    
+    <router-link to="/login" exact>Login</router-link>
     <h2>Ecosystem</h2>
       
   </div>
